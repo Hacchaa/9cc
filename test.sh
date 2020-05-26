@@ -17,6 +17,9 @@ assert(){
 	fi
 }
 
-assert 41 "12 + 34 - 5"
+assert 0 "5==1+3"
+assert 1 "1 < 2"
+assert 0 "-10 > 3*4"
+assert 10 "-15*+2+40"
 
 echo OK
